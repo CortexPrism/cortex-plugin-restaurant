@@ -1,0 +1,30 @@
+{
+  "name": "cortex-plugin-restaurant",
+  "version": "1.0.0",
+  "description": "Restaurant & Food Service Manager — Toast/Square/DoorDash integration for menu, orders, delivery, inventory",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-restaurant",
+  "homepage": "https://cortexprism.io/marketplace/plugins/restaurant",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "restaurant_manage_menu",
+      "description": "Update menu items and pricing",
+      "params": []
+    },
+    { "name": "restaurant_track_orders", "description": "Track incoming orders", "params": [] },
+    { "name": "restaurant_inventory", "description": "Monitor inventory levels", "params": [] },
+    {
+      "name": "restaurant_analyze_sales",
+      "description": "Analyze sales patterns and trends",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
